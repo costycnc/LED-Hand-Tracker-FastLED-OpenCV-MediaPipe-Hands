@@ -3,6 +3,10 @@
 This project combines **Arduino with FastLED** and **computer vision in Python** using **OpenCV** and **MediaPipe Hands**.  
 It allows controlling LED colors and brightness based on real-time hand movements captured from a webcam.
 
+Check out the demo video on YouTube: [Watch here](https://www.youtube.com/shorts/u6FXnKp06Jg)
+
+
+
 ---
 
 ## 📦 Requirements
