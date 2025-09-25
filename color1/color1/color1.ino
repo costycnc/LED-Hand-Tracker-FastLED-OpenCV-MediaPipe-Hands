@@ -3,7 +3,7 @@
 #define NUM_LEDS 10       // numero totale di LED
 #define DATA_PIN 8        // pin collegato ai WS2812
 CRGB leds[NUM_LEDS];
-int currentColor = CRGB::Red;
+CRGB currentColor = CRGB::Red;
 int value=10;
 
 String inputString = "";  // buffer per dati seriali
@@ -37,7 +37,7 @@ void processCommand(String cmd) {
 
       // Accendi i LED da 1 fino a "value"
     FastLED.clear();
-    for (int i = 0; i < value && i < NUM_LEDS; i++) {
+    for (int i = 0; i < value ; i++) {
       leds[i] = currentColor;  // puoi cambiare colore
     }
     FastLED.show();
@@ -47,7 +47,7 @@ void processCommand(String cmd) {
     currentColor=CRGB::Red;
       // Accendi i LED da 1 fino a "value"
     FastLED.clear();
-    for (int i = 0; i < value && i < NUM_LEDS; i++) {
+    for (int i = 0; i < value ; i++) {
       leds[i] = currentColor;  // puoi cambiare colore
     }
     FastLED.show();
@@ -57,7 +57,7 @@ void processCommand(String cmd) {
     currentColor=CRGB::Green;
       // Accendi i LED da 1 fino a "value"
     FastLED.clear();
-    for (int i = 0; i < value && i < NUM_LEDS; i++) {
+    for (int i = 0; i < value; i++) {
       leds[i] = currentColor;  // puoi cambiare colore
     }
     FastLED.show();
@@ -67,7 +67,7 @@ void processCommand(String cmd) {
     currentColor=CRGB::Blue;
       // Accendi i LED da 1 fino a "value"
     FastLED.clear();
-    for (int i = 0; i < value && i < NUM_LEDS; i++) {
+    for (int i = 0; i < value; i++) {
       leds[i] = currentColor;  // puoi cambiare colore
     }
     FastLED.show();
